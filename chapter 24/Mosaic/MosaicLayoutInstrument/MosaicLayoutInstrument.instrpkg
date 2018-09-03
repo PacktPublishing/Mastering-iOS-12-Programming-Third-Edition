@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package>
+	<id>com.donnywals.MosaicLayoutInstrument</id>
+	<title>MosaicLayoutInstrument</title>
+	<owner>
+		<name>Donny Wals</name>
+	</owner>
+  
+  <os-signpost-interval-schema>
+    <id>signpost-schema</id>
+    <title>Layout Signpost Schema</title>
+    
+    <subsystem>"com.donnywals.layout"</subsystem>
+    <category>"layout"</category>
+    <name>"Prepare Layout"</name>
+    
+    <start-pattern>
+      <message>"Preparing layout with numSections: "?num-sections</message>
+    </start-pattern>
+
+    <end-pattern>
+      <message>"Done preparing layout"</message>
+    </end-pattern>
+    
+    <column>
+      <mnemonic>num-sections</mnemonic>
+      <title>Number of Sections</title>
+      <type>string</type>
+      <expression>?num-sections</expression>
+    </column>
+  </os-signpost-interval-schema>
+
+  <instrument>
+    <id>com.donnywals.layout-instrument</id>
+    <title>Layout Instrument</title>
+    <category>Behavior</category>
+    <purpose>Insight in layout preparation</purpose>
+    <icon>Generic</icon>
+    
+    <create-table>
+      <id>layout-table</id>
+      <schema-ref>signpost-schema</schema-ref>
+    </create-table>
+    
+    <graph>
+      <title>Layout preparation</title>
+      <lane>
+        <title>Prepare</title>
+        <table-ref>layout-table</table-ref>
+        
+        <plot-template>
+          <instance-by>num-sections</instance-by>
+          <value-from>duration</value-from>
+        </plot-template>
+      </lane>
+    </graph>
+    
+    <list>
+      <title>Layout list</title>
+      <table-ref>layout-table</table-ref>
+      <column>num-sections</column>
+      <column>duration</column>
+    </list>
+  </instrument>
+</package>

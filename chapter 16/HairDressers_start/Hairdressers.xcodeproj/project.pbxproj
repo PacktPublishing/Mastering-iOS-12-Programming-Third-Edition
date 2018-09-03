@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9738A0BF2122D5A600DB400D /* PersistentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738A0BE2122D5A600DB400D /* PersistentHelper.swift */; };
+		9738A0C22122D80B00DB400D /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738A0C12122D80B00DB400D /* NSManagedObjectContext.swift */; };
+		9738A0C42122E10700DB400D /* AddAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738A0C32122E10700DB400D /* AddAppointmentViewController.swift */; };
+		97CA752E2122C62C00FF5ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA752D2122C62C00FF5ADD /* AppDelegate.swift */; };
+		97CA75332122C62C00FF5ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97CA75312122C62C00FF5ADD /* Main.storyboard */; };
+		97CA75352122C62D00FF5ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97CA75342122C62D00FF5ADD /* Assets.xcassets */; };
+		97CA75382122C62D00FF5ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97CA75362122C62D00FF5ADD /* LaunchScreen.storyboard */; };
+		97CA75402122C64E00FF5ADD /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA753F2122C64E00FF5ADD /* AppointmentsViewController.swift */; };
+		97CA75422122C65A00FF5ADD /* HairdressersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA75412122C65A00FF5ADD /* HairdressersViewController.swift */; };
+		97CA75472122CF6F00FF5ADD /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA75462122CF6F00FF5ADD /* ChatTableViewCell.swift */; };
+		97CA754A2122D05F00FF5ADD /* Hairdressers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97CA75482122D05F00FF5ADD /* Hairdressers.xcdatamodeld */; };
+		97CA754C2122D14D00FF5ADD /* Hairdressers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97CA754B2122D14D00FF5ADD /* Hairdressers.plist */; };
+		97CA754F2122D1DC00FF5ADD /* HairdressersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA754E2122D1DC00FF5ADD /* HairdressersDataSource.swift */; };
+		97CA75512122D39000FF5ADD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA75502122D39000FF5ADD /* ChatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9738A0BE2122D5A600DB400D /* PersistentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentHelper.swift; sourceTree = "<group>"; };
+		9738A0C12122D80B00DB400D /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		9738A0C32122E10700DB400D /* AddAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAppointmentViewController.swift; sourceTree = "<group>"; };
+		97CA752A2122C62C00FF5ADD /* Hairdressers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hairdressers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97CA752D2122C62C00FF5ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97CA75322122C62C00FF5ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97CA75342122C62D00FF5ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97CA75372122C62D00FF5ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97CA75392122C62D00FF5ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97CA753F2122C64E00FF5ADD /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		97CA75412122C65A00FF5ADD /* HairdressersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairdressersViewController.swift; sourceTree = "<group>"; };
+		97CA75462122CF6F00FF5ADD /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		97CA75492122D05F00FF5ADD /* Hairdressers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hairdressers.xcdatamodel; sourceTree = "<group>"; };
+		97CA754B2122D14D00FF5ADD /* Hairdressers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Hairdressers.plist; sourceTree = "<group>"; };
+		97CA754E2122D1DC00FF5ADD /* HairdressersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairdressersDataSource.swift; sourceTree = "<group>"; };
+		97CA75502122D39000FF5ADD /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97CA75272122C62C00FF5ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9738A0C02122D7FD00DB400D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9738A0C12122D80B00DB400D /* NSManagedObjectContext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		97CA75212122C62C00FF5ADD = {
+			isa = PBXGroup;
+			children = (
+				97CA752C2122C62C00FF5ADD /* Hairdressers */,
+				97CA752B2122C62C00FF5ADD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97CA752B2122C62C00FF5ADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97CA752A2122C62C00FF5ADD /* Hairdressers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97CA752C2122C62C00FF5ADD /* Hairdressers */ = {
+			isa = PBXGroup;
+			children = (
+				9738A0C02122D7FD00DB400D /* Extensions */,
+				97CA754D2122D1C800FF5ADD /* Data */,
+				97CA75452122CF5E00FF5ADD /* Cells */,
+				97CA75442122C68800FF5ADD /* Storyboards */,
+				97CA75432122C68200FF5ADD /* ViewControllers */,
+				97CA752D2122C62C00FF5ADD /* AppDelegate.swift */,
+				97CA75342122C62D00FF5ADD /* Assets.xcassets */,
+				97CA75392122C62D00FF5ADD /* Info.plist */,
+				97CA75482122D05F00FF5ADD /* Hairdressers.xcdatamodeld */,
+			);
+			path = Hairdressers;
+			sourceTree = "<group>";
+		};
+		97CA75432122C68200FF5ADD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				97CA753F2122C64E00FF5ADD /* AppointmentsViewController.swift */,
+				9738A0C32122E10700DB400D /* AddAppointmentViewController.swift */,
+				97CA75412122C65A00FF5ADD /* HairdressersViewController.swift */,
+				97CA75502122D39000FF5ADD /* ChatViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		97CA75442122C68800FF5ADD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				97CA75312122C62C00FF5ADD /* Main.storyboard */,
+				97CA75362122C62D00FF5ADD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		97CA75452122CF5E00FF5ADD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97CA75462122CF6F00FF5ADD /* ChatTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		97CA754D2122D1C800FF5ADD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				97CA754B2122D14D00FF5ADD /* Hairdressers.plist */,
+				97CA754E2122D1DC00FF5ADD /* HairdressersDataSource.swift */,
+				9738A0BE2122D5A600DB400D /* PersistentHelper.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97CA75292122C62C00FF5ADD /* Hairdressers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97CA753C2122C62D00FF5ADD /* Build configuration list for PBXNativeTarget "Hairdressers" */;
+			buildPhases = (
+				97CA75262122C62C00FF5ADD /* Sources */,
+				97CA75272122C62C00FF5ADD /* Frameworks */,
+				97CA75282122C62C00FF5ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hairdressers;
+			productName = HairDressers;
+			productReference = 97CA752A2122C62C00FF5ADD /* Hairdressers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97CA75222122C62C00FF5ADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Donny Wals";
+				TargetAttributes = {
+					97CA75292122C62C00FF5ADD = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 97CA75252122C62C00FF5ADD /* Build configuration list for PBXProject "Hairdressers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97CA75212122C62C00FF5ADD;
+			productRefGroup = 97CA752B2122C62C00FF5ADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97CA75292122C62C00FF5ADD /* Hairdressers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97CA75282122C62C00FF5ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97CA75382122C62D00FF5ADD /* LaunchScreen.storyboard in Resources */,
+				97CA75352122C62D00FF5ADD /* Assets.xcassets in Resources */,
+				97CA75332122C62C00FF5ADD /* Main.storyboard in Resources */,
+				97CA754C2122D14D00FF5ADD /* Hairdressers.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97CA75262122C62C00FF5ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9738A0C42122E10700DB400D /* AddAppointmentViewController.swift in Sources */,
+				97CA754A2122D05F00FF5ADD /* Hairdressers.xcdatamodeld in Sources */,
+				97CA75402122C64E00FF5ADD /* AppointmentsViewController.swift in Sources */,
+				9738A0BF2122D5A600DB400D /* PersistentHelper.swift in Sources */,
+				97CA75472122CF6F00FF5ADD /* ChatTableViewCell.swift in Sources */,
+				97CA75512122D39000FF5ADD /* ChatViewController.swift in Sources */,
+				97CA75422122C65A00FF5ADD /* HairdressersViewController.swift in Sources */,
+				97CA754F2122D1DC00FF5ADD /* HairdressersDataSource.swift in Sources */,
+				9738A0C22122D80B00DB400D /* NSManagedObjectContext.swift in Sources */,
+				97CA752E2122C62C00FF5ADD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97CA75312122C62C00FF5ADD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97CA75322122C62C00FF5ADD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97CA75362122C62D00FF5ADD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97CA75372122C62D00FF5ADD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97CA753A2122C62D00FF5ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97CA753B2122C62D00FF5ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97CA753D2122C62D00FF5ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = HairDressers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.Hairdressers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97CA753E2122C62D00FF5ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = HairDressers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.Hairdressers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97CA75252122C62C00FF5ADD /* Build configuration list for PBXProject "Hairdressers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97CA753A2122C62D00FF5ADD /* Debug */,
+				97CA753B2122C62D00FF5ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97CA753C2122C62D00FF5ADD /* Build configuration list for PBXNativeTarget "Hairdressers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97CA753D2122C62D00FF5ADD /* Debug */,
+				97CA753E2122C62D00FF5ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		97CA75482122D05F00FF5ADD /* Hairdressers.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				97CA75492122D05F00FF5ADD /* Hairdressers.xcdatamodel */,
+			);
+			currentVersion = 97CA75492122D05F00FF5ADD /* Hairdressers.xcdatamodel */;
+			path = Hairdressers.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 97CA75222122C62C00FF5ADD /* Project object */;
+}

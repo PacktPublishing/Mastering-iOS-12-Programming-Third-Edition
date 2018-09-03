@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.2.4" systemVersion="18A353d" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Appointment" representedClassName="Appointment" syncable="YES" codeGenerationType="class">
+        <attribute name="day" attributeType="String" syncable="YES"/>
+        <attribute name="hairdresser" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES" codeGenerationType="class">
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hairdresser" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Appointment" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Message" positionX="-54" positionY="9" width="128" height="90"/>
+    </elements>
+</model>

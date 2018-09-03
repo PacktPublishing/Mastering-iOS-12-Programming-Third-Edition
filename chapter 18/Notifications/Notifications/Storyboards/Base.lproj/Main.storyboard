@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WLl-V7-Vhk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Reminders-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AddNotificationViewController" customModule="Notifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HOD-Nk-5E4">
+                                <rect key="frame" x="40.5" y="265.5" width="294.5" height="107"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdm-Tl-Lja">
+                                        <rect key="frame" x="73.5" y="0.0" width="147" height="30"/>
+                                        <state key="normal" title="Add a lunch reminder"/>
+                                        <connections>
+                                            <action selector="addLunchTimeNotification" destination="BYZ-38-t0r" eventType="touchUpInside" id="8IJ-Es-6cE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSe-Yj-zTP">
+                                        <rect key="frame" x="64.5" y="38" width="165" height="30"/>
+                                        <state key="normal" title="Add a bedtime reminder"/>
+                                        <connections>
+                                            <action selector="addBedTimeNotification" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNK-VT-u7f"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="oIq-HD-vCA">
+                                        <rect key="frame" x="0.0" y="76" width="294.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hourly reminder to drink water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1U-AB-alZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="232.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TSZ-S0-jg0">
+                                                <rect key="frame" x="245.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="drinkWaterNotificationToggled" destination="BYZ-38-t0r" eventType="valueChanged" id="7LD-i4-MMc"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjs-Za-Teu">
+                                <rect key="frame" x="82.5" y="570" width="210" height="30"/>
+                                <state key="normal" title="Enable notifications in settings"/>
+                                <connections>
+                                    <action selector="addLunchTimeNotification" destination="BYZ-38-t0r" eventType="touchUpInside" id="j77-M7-m6a"/>
+                                    <action selector="openSettingsTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZG-Rc-ekp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HOD-Nk-5E4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KnK-Rv-IJg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yjs-Za-Teu" secondAttribute="bottom" constant="18" id="MXv-Pq-MIv"/>
+                            <constraint firstItem="HOD-Nk-5E4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qXt-Nh-uXs"/>
+                            <constraint firstItem="yjs-Za-Teu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vbZ-7b-sxq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Reminders" image="add" id="pEg-1D-OlA"/>
+                    <connections>
+                        <outlet property="enableNotificationsButton" destination="yjs-Za-Teu" id="gWR-4d-beS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="-56.221889055472268"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="13U-Vp-Vbk">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WLl-V7-Vhk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PSH-2c-og2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rgF-N5-Unp"/>
+                        <segue destination="0fZ-rU-RGY" kind="relationship" relationship="viewControllers" id="36r-qE-hZz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urC-Ey-Lpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190" y="-770"/>
+        </scene>
+        <!--Scheduled-->
+        <scene sceneID="tZk-DA-cAy">
+            <objects>
+                <viewController id="0fZ-rU-RGY" customClass="ScheduledRemindersViewController" customModule="Notifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ruf-AL-xn4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zDq-o5-COc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderTableViewCell" rowHeight="64" id="KhA-Kx-rFy" customClass="ReminderTableViewCell" customModule="Notifications" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KhA-Kx-rFy" id="SSD-k7-tTY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8rl-yo-AlS">
+                                                    <rect key="frame" x="15" y="8" width="345" height="47.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-yw-4Hu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="307" height="47.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Reminder name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-Pk-Sjg">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="26.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awl-Ad-2Xh">
+                                                                    <rect key="frame" x="0.0" y="29.5" width="62" height="18"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhi-Vy-j78">
+                                                            <rect key="frame" x="315" y="0.0" width="30" height="47.5"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8rl-yo-AlS" firstAttribute="top" secondItem="SSD-k7-tTY" secondAttribute="top" constant="8" id="MyP-18-aLX"/>
+                                                <constraint firstAttribute="bottom" secondItem="8rl-yo-AlS" secondAttribute="bottom" constant="8" id="UsP-gM-U3l"/>
+                                                <constraint firstItem="8rl-yo-AlS" firstAttribute="leading" secondItem="SSD-k7-tTY" secondAttribute="leading" constant="15" id="Yy9-XS-XKE"/>
+                                                <constraint firstAttribute="trailing" secondItem="8rl-yo-AlS" secondAttribute="trailing" constant="15" id="gks-zE-VJv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="completionLabel" destination="Zhi-Vy-j78" id="XVS-tw-Eii"/>
+                                            <outlet property="dueDateLabel" destination="awl-Ad-2Xh" id="qKa-yn-J6g"/>
+                                            <outlet property="titleLabel" destination="ehN-Pk-Sjg" id="VPC-0X-nVV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="73q-R6-vrp" firstAttribute="trailing" secondItem="zDq-o5-COc" secondAttribute="trailing" id="Wkc-WZ-Gfb"/>
+                            <constraint firstItem="zDq-o5-COc" firstAttribute="leading" secondItem="73q-R6-vrp" secondAttribute="leading" id="j64-zT-dYQ"/>
+                            <constraint firstItem="73q-R6-vrp" firstAttribute="bottom" secondItem="zDq-o5-COc" secondAttribute="bottom" id="pdT-Xn-hfc"/>
+                            <constraint firstItem="73q-R6-vrp" firstAttribute="top" secondItem="zDq-o5-COc" secondAttribute="top" id="zJg-si-UYE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="73q-R6-vrp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scheduled" image="history" id="VJx-Qy-Pu2"/>
+                    <connections>
+                        <outlet property="tableView" destination="zDq-o5-COc" id="zIQ-fE-oRJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYu-QO-Wfu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512.8" y="-56.221889055472268"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="26" height="25"/>
+        <image name="history" width="27" height="27"/>
+    </resources>
+</document>
