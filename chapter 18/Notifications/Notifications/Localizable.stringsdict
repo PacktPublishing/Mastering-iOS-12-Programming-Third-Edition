@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>REMINDER_SUMMARY</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@reminders@</string>
+		<key>reminders</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>one</key>
+			<string>%u more reminder for this topic.</string>
+			<key>other</key>
+			<string>%u more reminders for this topic.</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

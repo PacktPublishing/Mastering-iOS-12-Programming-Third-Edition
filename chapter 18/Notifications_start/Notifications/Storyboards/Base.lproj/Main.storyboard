@@ -46,7 +46,7 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TSZ-S0-jg0">
                                                 <rect key="frame" x="245.5" y="0.0" width="51" height="31"/>
                                                 <connections>
-                                                    <action selector="drinkWaterNotificationToggled" destination="BYZ-38-t0r" eventType="valueChanged" id="7LD-i4-MMc"/>
+                                                    <action selector="drinkWaterNotificationToggledWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="sQe-oF-dfd"/>
                                                 </connections>
                                             </switch>
                                         </subviews>

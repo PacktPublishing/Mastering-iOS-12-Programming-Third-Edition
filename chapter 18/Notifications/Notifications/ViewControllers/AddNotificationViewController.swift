@@ -22,9 +22,13 @@ class AddNotificationViewController: UIViewController, PersistentContainerRequir
       var components = DateComponents()
       components.hour = 23
 
-      self.createReminder("Bedtime reminder", withComponents: components, inContext: self.persistentContainer.viewContext)
+      let reminder = self.createReminder("Bedtime reminder", withComponents: components, inContext: self.persistentContainer.viewContext)
 
       try! self.persistentContainer.viewContext.save()
+      
+      let content = self.notificationsHelper.createNotificationContentForReminder(reminder)
+      content.threadIdentifier  = "bedtime-thread"
+      self.notificationsHelper.scheduleTimedNotificationWithContent(content)
     }
   }
 
@@ -34,9 +38,13 @@ class AddNotificationViewController: UIViewController, PersistentContainerRequir
       components.hour = 12
       components.minute = 30
 
-      self.createReminder("Lunch reminder", withComponents: components, inContext: self.persistentContainer.viewContext)
+      let reminder = self.createReminder("Lunch reminder", withComponents: components, inContext: self.persistentContainer.viewContext)
 
       try! self.persistentContainer.viewContext.save()
+      
+      let content = self.notificationsHelper.createNotificationContentForReminder(reminder)
+      content.threadIdentifier  = "lunchtime-thread"
+      self.notificationsHelper.scheduleTimedNotificationWithContent(content)
     }
   }
   
@@ -45,7 +53,7 @@ class AddNotificationViewController: UIViewController, PersistentContainerRequir
     UIApplication.shared.open(settingsUrl!, options: [:], completionHandler: nil)
   }
 
-  func createReminder(_ title: String, withComponents components: DateComponents, inContext moc: NSManagedObjectContext) {
+  func createReminder(_ title: String, withComponents components: DateComponents, inContext moc: NSManagedObjectContext) -> Reminder {
     let reminder = Reminder(context: moc)
     reminder.dueDate = NSCalendar.current.nextDate(after: Date(), matching: components, matchingPolicy: .nextTime)!
     reminder.title = title
@@ -60,6 +68,8 @@ class AddNotificationViewController: UIViewController, PersistentContainerRequir
         }
       }
     }
+    
+    return reminder
   }
 
   @IBAction func drinkWaterNotificationToggled(sender: UISwitch) {
@@ -69,6 +79,10 @@ class AddNotificationViewController: UIViewController, PersistentContainerRequir
           self?.enableNotificationsButton.isHidden = result
         }
       }
+      
+      notificationsHelper.scheduleHourlyWaterReminder()
+    } else {
+      notificationsHelper.unscheduleHourlyWaterReminder()
     }
   }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9756A2B02140007B0051B8F7 /* PersistentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756A2AF2140007B0051B8F7 /* PersistentHelper.swift */; };
 		97D24A01213960B50088E07D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D24A00213960B50088E07D /* AppDelegate.swift */; };
 		97D24A06213960B50088E07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D24A04213960B50088E07D /* Main.storyboard */; };
 		97D24A09213960B50088E07D /* Notifications.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97D24A07213960B50088E07D /* Notifications.xcdatamodeld */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9756A2AF2140007B0051B8F7 /* PersistentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentHelper.swift; sourceTree = "<group>"; };
 		97D249FD213960B50088E07D /* Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D24A00213960B50088E07D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97D24A05213960B50088E07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9756A2AE2140006B0051B8F7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9756A2AF2140007B0051B8F7 /* PersistentHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		97D249F4213960B50088E07D = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		97D249FF213960B50088E07D /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				9756A2AE2140006B0051B8F7 /* Helpers */,
 				97D24A24213969940088E07D /* Storyboards */,
 				97D24A1D213964930088E07D /* Protocols */,
 				97D24A1C213962830088E07D /* Cell */,
@@ -183,6 +194,7 @@
 				97D24A1F2139649B0088E07D /* PersistentContainerRequiring.swift in Sources */,
 				97D24A01213960B50088E07D /* AppDelegate.swift in Sources */,
 				97D24A19213961BB0088E07D /* ScheduledRemindersViewController.swift in Sources */,
+				9756A2B02140007B0051B8F7 /* PersistentHelper.swift in Sources */,
 				97D24A17213961A40088E07D /* AddNotificationViewController.swift in Sources */,
 				97D24A1B213962800088E07D /* ReminderTableViewCell.swift in Sources */,
 			);

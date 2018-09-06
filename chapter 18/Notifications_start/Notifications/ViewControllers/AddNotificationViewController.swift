@@ -11,7 +11,7 @@ class AddNotificationViewController: UIViewController, PersistentContainerRequir
       var components = DateComponents()
       components.hour = 23
 
-      self.createReminder("Bedtime reminder", withComponents: components, inContext: self.persistentContainer.viewContext)
+      let reminder = self.createReminder("Bedtime reminder", withComponents: components, inContext: self.persistentContainer.viewContext)
 
       try! self.persistentContainer.viewContext.save()
     }
@@ -23,7 +23,7 @@ class AddNotificationViewController: UIViewController, PersistentContainerRequir
       components.hour = 12
       components.minute = 30
 
-      self.createReminder("Lunch reminder", withComponents: components, inContext: self.persistentContainer.viewContext)
+      let reminder = self.createReminder("Lunch reminder", withComponents: components, inContext: self.persistentContainer.viewContext)
 
       try! self.persistentContainer.viewContext.save()
     }
@@ -33,13 +33,15 @@ class AddNotificationViewController: UIViewController, PersistentContainerRequir
     
   }
 
-  func createReminder(_ title: String, withComponents components: DateComponents, inContext moc: NSManagedObjectContext) {
+  func createReminder(_ title: String, withComponents components: DateComponents, inContext moc: NSManagedObjectContext) -> Reminder{
     let reminder = Reminder(context: moc)
     reminder.dueDate = NSCalendar.current.nextDate(after: Date(), matching: components, matchingPolicy: .nextTime)!
     reminder.title = title
     reminder.isCompleted = false
     reminder.createdAt = Date()
     reminder.identifier = UUID()
+    
+    return reminder
   }
 
   @IBAction func drinkWaterNotificationToggled(sender: UISwitch) {
