@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="20K-Mo-B6f">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drag Drop View Controller-->
+        <scene sceneID="LwZ-WX-4ka">
+            <objects>
+                <viewController id="20K-Mo-B6f" customClass="DragDropViewController" customModule="PlainDragDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfa-yb-JTR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="DBM-wd-oyU">
+                                <rect key="frame" x="16" y="337" width="343" height="293"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drop here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Taz-lf-tvO">
+                                <rect key="frame" x="149.5" y="308" width="76.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag from here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpW-7g-jYO">
+                                <rect key="frame" x="129.5" y="638" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gzj-73-1AR">
+                                <rect key="frame" x="16" y="20" width="343" height="280"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="dsG-F1-YaJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EpW-7g-jYO" firstAttribute="top" secondItem="DBM-wd-oyU" secondAttribute="bottom" constant="8" id="13S-1H-3ZA"/>
+                            <constraint firstItem="Taz-lf-tvO" firstAttribute="top" secondItem="gzj-73-1AR" secondAttribute="bottom" constant="8" id="FCt-VX-TV6"/>
+                            <constraint firstItem="Taz-lf-tvO" firstAttribute="centerX" secondItem="ZUt-0K-QsV" secondAttribute="centerX" id="GYB-uU-laY"/>
+                            <constraint firstItem="gzj-73-1AR" firstAttribute="leading" secondItem="ZUt-0K-QsV" secondAttribute="leading" constant="16" id="Wo3-7N-F68"/>
+                            <constraint firstItem="ZUt-0K-QsV" firstAttribute="trailing" secondItem="DBM-wd-oyU" secondAttribute="trailing" constant="16" id="Z6r-4K-QYP"/>
+                            <constraint firstItem="ZUt-0K-QsV" firstAttribute="trailing" secondItem="gzj-73-1AR" secondAttribute="trailing" constant="16" id="al5-bN-vwe"/>
+                            <constraint firstItem="DBM-wd-oyU" firstAttribute="top" secondItem="Taz-lf-tvO" secondAttribute="bottom" constant="8" id="bXf-ka-hMN"/>
+                            <constraint firstItem="ZUt-0K-QsV" firstAttribute="bottom" secondItem="EpW-7g-jYO" secondAttribute="bottom" constant="8" id="c2f-pk-A04"/>
+                            <constraint firstItem="DBM-wd-oyU" firstAttribute="leading" secondItem="ZUt-0K-QsV" secondAttribute="leading" constant="16" id="fJ7-jD-sme"/>
+                            <constraint firstItem="gzj-73-1AR" firstAttribute="top" secondItem="ZUt-0K-QsV" secondAttribute="top" id="g3U-oW-LWk"/>
+                            <constraint firstItem="EpW-7g-jYO" firstAttribute="centerX" secondItem="ZUt-0K-QsV" secondAttribute="centerX" id="hEe-Rx-hBi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZUt-0K-QsV"/>
+                    </view>
+                    <connections>
+                        <outlet property="dropArea" destination="gzj-73-1AR" id="quR-fW-ndS"/>
+                        <outlet property="imageView" destination="DBM-wd-oyU" id="6pY-OY-3fX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ug7-90-7j2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="16" height="16"/>
+    </resources>
+</document>
