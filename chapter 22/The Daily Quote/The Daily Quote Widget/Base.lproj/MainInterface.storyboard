@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="The_Daily_Quote_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yk6-fk-0Ae">
+                                <rect key="frame" x="16" y="20" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJW-Df-ogC">
+                                <rect key="frame" x="16" y="48" width="288" height="15"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yk6-fk-0Ae" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="20" id="5Ew-KB-ktV"/>
+                            <constraint firstItem="BJW-Df-ogC" firstAttribute="top" secondItem="yk6-fk-0Ae" secondAttribute="bottom" constant="7.5" id="WTx-U5-w2R"/>
+                            <constraint firstItem="BJW-Df-ogC" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="WVX-xQ-BFD"/>
+                            <constraint firstItem="yk6-fk-0Ae" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="jvc-jY-2mc"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="BJW-Df-ogC" secondAttribute="trailing" constant="16" id="kyu-2G-E75"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="yk6-fk-0Ae" secondAttribute="trailing" constant="16" id="q8b-VE-FQt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="110"/>
+                    <connections>
+                        <outlet property="quoteCreator" destination="BJW-Df-ogC" id="Q8u-qE-1se"/>
+                        <outlet property="quoteLabel" destination="yk6-fk-0Ae" id="lcp-RW-Xg0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.799999999999997" y="27.886056971514247"/>
+        </scene>
+    </scenes>
+</document>
