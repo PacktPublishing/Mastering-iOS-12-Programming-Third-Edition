@@ -1,11 +1,3 @@
-//
-//  LocationHelper.swift
-//  LocationServices
-//
-//  Created by Donny Wals on 11/08/2018.
-//  Copyright © 2018 DonnyWals. All rights reserved.
-//
-
 import CoreLocation
 
 class LocationHelper: NSObject {

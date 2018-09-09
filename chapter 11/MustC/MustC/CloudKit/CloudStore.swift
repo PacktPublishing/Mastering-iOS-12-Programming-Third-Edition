@@ -1,11 +1,3 @@
-//
-//  CloudStore.swift
-//  MustC
-//
-//  Created by Donny Wals on 29/07/2018.
-//  Copyright © 2018 DonnyWals. All rights reserved.
-//
-
 import UIKit
 import CloudKit
 import CoreData

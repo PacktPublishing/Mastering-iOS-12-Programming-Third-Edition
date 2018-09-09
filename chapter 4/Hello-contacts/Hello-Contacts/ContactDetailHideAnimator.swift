@@ -1,11 +1,3 @@
-//
-//  ContactDetailHideAnimator.swift
-//  Hello-Contacts
-//
-//  Created by Donny Wals on 19/07/2018.
-//  Copyright © 2018 DonnyWals. All rights reserved.
-//
-
 import UIKit
 
 class ContactDetailHideAnimator: NSObject {

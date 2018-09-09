@@ -1,11 +1,3 @@
-//
-//  Movie.swift
-//  MustC
-//
-//  Created by Donny Wals on 07/08/2018.
-//  Copyright © 2018 DonnyWals. All rights reserved.
-//
-
 import Foundation
 import CoreData
 import CloudKit

@@ -1,11 +1,3 @@
-//
-//  Contact.swift
-//  Hello-Contacts
-//
-//  Created by Donny Wals on 09/04/2018.
-//  Copyright © 2018 DonnyWals. All rights reserved.
-//
-
 import UIKit
 import Contacts
 

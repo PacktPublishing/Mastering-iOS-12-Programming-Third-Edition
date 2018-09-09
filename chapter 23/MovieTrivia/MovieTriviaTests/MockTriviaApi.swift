@@ -1,11 +1,3 @@
-//
-//  MockTriviaApi.swift
-//  MovieTriviaTests
-//
-//  Created by Donny Wals on 02/08/2018.
-//  Copyright © 2018 DonnyWals. All rights reserved.
-//
-
 import Foundation
 @testable import MovieTrivia
 

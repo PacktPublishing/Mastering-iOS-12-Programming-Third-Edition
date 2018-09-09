@@ -1,11 +1,3 @@
-//
-//  IntentHandler.swift
-//  MessageHairdresserIntent
-//
-//  Created by Donny Wals on 14/08/2018.
-//  Copyright © 2018 Donny Wals. All rights reserved.
-//
-
 import Intents
 
 // As an example, this class is set up to handle Message intents.

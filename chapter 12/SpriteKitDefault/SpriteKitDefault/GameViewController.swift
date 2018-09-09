@@ -1,11 +1,3 @@
-//
-//  GameViewController.swift
-//  SpriteKitDefault
-//
-//  Created by Donny Wals on 10/08/2018.
-//  Copyright © 2018 DonnyWals. All rights reserved.
-//
-
 import UIKit
 import SpriteKit
 import GameplayKit

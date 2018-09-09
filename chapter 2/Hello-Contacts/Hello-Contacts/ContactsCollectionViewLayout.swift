@@ -1,11 +1,3 @@
-//
-//  ContactsCollectionViewLayout.swift
-//  Hello-Contacts
-//
-//  Created by Donny Wals on 10/06/2018.
-//  Copyright © 2018 DonnyWals. All rights reserved.
-//
-
 import UIKit
 
 class ContactsCollectionViewLayout: UICollectionViewLayout {
