@@ -29,8 +29,8 @@
 		97C50A412107548C0097EF90 /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C50A402107548C0097EF90 /* NSPersistentContainer.swift */; };
 		97C50A4321075AA40097EF90 /* PersistenContainerRequiring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C50A4221075AA40097EF90 /* PersistenContainerRequiring.swift */; };
 		97D18E7021198EAF007B68B8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D18E6F21198EAF007B68B8 /* Movie.swift */; };
-		97D18E7421198EC6007B68B8 /* MovieDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D18E7221198EC6007B68B8 /* MovieDBResponse.swift */; };
-		97D18E7521198EC6007B68B8 /* MovieDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D18E7321198EC6007B68B8 /* MovieDBHelper.swift */; };
+		97EDE87E216CC55A00442BF2 /* MovieDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDE87C216CC55A00442BF2 /* MovieDBHelper.swift */; };
+		97EDE87F216CC55A00442BF2 /* MovieDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDE87D216CC55A00442BF2 /* MovieDBResponse.swift */; };
 		97FDFBE62142EC36003047C6 /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FDFBE52142EC36003047C6 /* MoviesListViewController.swift */; };
 		97FDFBE82142EC61003047C6 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FDFBE72142EC61003047C6 /* MovieDetailViewController.swift */; };
 		97FDFBEA2142F3D5003047C6 /* IndexingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FDFBE92142F3D5003047C6 /* IndexingFactory.swift */; };
@@ -62,8 +62,8 @@
 		97C50A402107548C0097EF90 /* NSPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPersistentContainer.swift; sourceTree = "<group>"; };
 		97C50A4221075AA40097EF90 /* PersistenContainerRequiring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenContainerRequiring.swift; sourceTree = "<group>"; };
 		97D18E6F21198EAF007B68B8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		97D18E7221198EC6007B68B8 /* MovieDBResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDBResponse.swift; path = "../../../../chapter 10/MustC/MustC/Helpers/MovieDBResponse.swift"; sourceTree = "<group>"; };
-		97D18E7321198EC6007B68B8 /* MovieDBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDBHelper.swift; path = "../../../../chapter 10/MustC/MustC/Helpers/MovieDBHelper.swift"; sourceTree = "<group>"; };
+		97EDE87C216CC55A00442BF2 /* MovieDBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDBHelper.swift; sourceTree = "<group>"; };
+		97EDE87D216CC55A00442BF2 /* MovieDBResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDBResponse.swift; sourceTree = "<group>"; };
 		97FDFBE52142EC36003047C6 /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
 		97FDFBE72142EC61003047C6 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		97FDFBE92142F3D5003047C6 /* IndexingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexingFactory.swift; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 		97D18E7121198EBA007B68B8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				97D18E7321198EC6007B68B8 /* MovieDBHelper.swift */,
-				97D18E7221198EC6007B68B8 /* MovieDBResponse.swift */,
+				97EDE87C216CC55A00442BF2 /* MovieDBHelper.swift */,
+				97EDE87D216CC55A00442BF2 /* MovieDBResponse.swift */,
 				97FDFBE92142F3D5003047C6 /* IndexingFactory.swift */,
 			);
 			path = Helpers;
@@ -279,16 +279,16 @@
 				970638582107B6410073ED78 /* NSManagedObjectContext.swift in Sources */,
 				97D18E7021198EAF007B68B8 /* Movie.swift in Sources */,
 				97FDFBE82142EC61003047C6 /* MovieDetailViewController.swift in Sources */,
-				97D18E7421198EC6007B68B8 /* MovieDBResponse.swift in Sources */,
-				97D18E7521198EC6007B68B8 /* MovieDBHelper.swift in Sources */,
 				97A5DDF621066782002FB912 /* MoviesViewController.swift in Sources */,
 				97FDFBE62142EC36003047C6 /* MoviesListViewController.swift in Sources */,
 				97C50A4321075AA40097EF90 /* PersistenContainerRequiring.swift in Sources */,
+				97EDE87E216CC55A00442BF2 /* MovieDBHelper.swift in Sources */,
 				97B426602143D8FF004DB58F /* URL.swift in Sources */,
 				97A5DDDE21066674002FB912 /* AppDelegate.swift in Sources */,
 				9706385621079C100073ED78 /* MustC.xcdatamodeld in Sources */,
 				97FDFBEA2142F3D5003047C6 /* IndexingFactory.swift in Sources */,
 				97C50A412107548C0097EF90 /* NSPersistentContainer.swift in Sources */,
+				97EDE87F216CC55A00442BF2 /* MovieDBResponse.swift in Sources */,
 				97A5DDFA210667BD002FB912 /* AddMovieViewController.swift in Sources */,
 				97A5DDF42106670D002FB912 /* AddFamilyMemberDelegate.swift in Sources */,
 				97A5DDF8210667A6002FB912 /* AddFamilyMemberViewController.swift in Sources */,

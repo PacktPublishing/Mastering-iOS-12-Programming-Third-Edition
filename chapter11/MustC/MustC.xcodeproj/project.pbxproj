@@ -28,8 +28,8 @@
 		97C50A412107548C0097EF90 /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C50A402107548C0097EF90 /* NSPersistentContainer.swift */; };
 		97C50A4321075AA40097EF90 /* PersistenContainerRequiring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C50A4221075AA40097EF90 /* PersistenContainerRequiring.swift */; };
 		97D18E7021198EAF007B68B8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D18E6F21198EAF007B68B8 /* Movie.swift */; };
-		97D18E7421198EC6007B68B8 /* MovieDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D18E7221198EC6007B68B8 /* MovieDBResponse.swift */; };
-		97D18E7521198EC6007B68B8 /* MovieDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D18E7321198EC6007B68B8 /* MovieDBHelper.swift */; };
+		97EDE872216CC4BB00442BF2 /* MovieDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDE870216CC4BB00442BF2 /* MovieDBHelper.swift */; };
+		97EDE873216CC4BB00442BF2 /* MovieDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDE871216CC4BB00442BF2 /* MovieDBResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +57,8 @@
 		97C50A402107548C0097EF90 /* NSPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPersistentContainer.swift; sourceTree = "<group>"; };
 		97C50A4221075AA40097EF90 /* PersistenContainerRequiring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenContainerRequiring.swift; sourceTree = "<group>"; };
 		97D18E6F21198EAF007B68B8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		97D18E7221198EC6007B68B8 /* MovieDBResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDBResponse.swift; path = "../../../../chapter 10/MustC/MustC/Helpers/MovieDBResponse.swift"; sourceTree = "<group>"; };
-		97D18E7321198EC6007B68B8 /* MovieDBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDBHelper.swift; path = "../../../../chapter 10/MustC/MustC/Helpers/MovieDBHelper.swift"; sourceTree = "<group>"; };
+		97EDE870216CC4BB00442BF2 /* MovieDBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDBHelper.swift; path = ../../../../chapter10/MustC/MustC/Helpers/MovieDBHelper.swift; sourceTree = "<group>"; };
+		97EDE871216CC4BB00442BF2 /* MovieDBResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieDBResponse.swift; path = ../../../../chapter10/MustC/MustC/Helpers/MovieDBResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +179,8 @@
 		97D18E7121198EBA007B68B8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				97D18E7321198EC6007B68B8 /* MovieDBHelper.swift */,
-				97D18E7221198EC6007B68B8 /* MovieDBResponse.swift */,
+				97EDE870216CC4BB00442BF2 /* MovieDBHelper.swift */,
+				97EDE871216CC4BB00442BF2 /* MovieDBResponse.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -271,8 +271,7 @@
 				9775759E2119C76F006A676A /* FamilyMember.swift in Sources */,
 				970638582107B6410073ED78 /* NSManagedObjectContext.swift in Sources */,
 				97D18E7021198EAF007B68B8 /* Movie.swift in Sources */,
-				97D18E7421198EC6007B68B8 /* MovieDBResponse.swift in Sources */,
-				97D18E7521198EC6007B68B8 /* MovieDBHelper.swift in Sources */,
+				97EDE872216CC4BB00442BF2 /* MovieDBHelper.swift in Sources */,
 				97A5DDF621066782002FB912 /* MoviesViewController.swift in Sources */,
 				97C50A4321075AA40097EF90 /* PersistenContainerRequiring.swift in Sources */,
 				97A5DDDE21066674002FB912 /* AppDelegate.swift in Sources */,
@@ -285,6 +284,7 @@
 				970638C42117044E0073ED78 /* CloudStoreRequiring.swift in Sources */,
 				97A5DDF2210666EB002FB912 /* AddMovieDelegate.swift in Sources */,
 				9706385F210DD62D0073ED78 /* CloudStore.swift in Sources */,
+				97EDE873216CC4BB00442BF2 /* MovieDBResponse.swift in Sources */,
 				970638D0211B33EE0073ED78 /* CKRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
