@@ -17,8 +17,10 @@ class ViewController: UIViewController {
     
     let contactFetcher = ContactFetchHelper()
     contactFetcher.fetch { [weak self] contacts in
-      self?.contacts = contacts
-      self?.collectionView.reloadData()
+      DispatchQueue.main.async {
+        self?.contacts = contacts
+        self?.collectionView.reloadData()
+      }
     }
     
     let longPressRecognizer = UILongPressGestureRecognizer(target: self,
