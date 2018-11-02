@@ -3,7 +3,7 @@
 This repository contains the code bundle for the Mastering iOS 12 book.
 <a href="https://www.packtpub.com/application-development/mastering-ios-12-programming-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789133202"><img src="https://www.packtpub.com/sites/default/files/B10618.png" alt="Mastering iOS 12 Programming, Third Edition" height="256px" align="right"></a>
 
-This is the code repository for [Book Name](https://www.packtpub.com/application-development/mastering-ios-12-programming-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789133202), published by Packt.
+This is the code repository for [Mastering iOS 12 Programming Third Edition](https://www.packtpub.com/application-development/mastering-ios-12-programming-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789133202), published by Packt.
 
 **Build professional-grade iOS applications with Swift and Xcode 10**
 
